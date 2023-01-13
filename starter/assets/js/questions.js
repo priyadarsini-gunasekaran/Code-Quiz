@@ -39,12 +39,12 @@
         question: "Questions 8 : Which event occurs when the user clicks on an HTML elementHow does a FOR loop start?",
         choices: ["a. for (i=0;i<=5)", "b. for(i=0;i<=5;i++)", "c. for i = 1 to 5", "d. for (i<=5;i++)"],
         answer: "b"
-    }
+    },
     {
         question: "Questions 9 : How do you round the number 7.25, to the nearest integer?",
         choices: ["a. rnd(7.25)", "b. Math.round(7.25)", "c. Math.rnd(7.25)", "d. round(7.25)"],
         answer: "b"
-    }
+    },
     {
         question: "Questions 10 : How do you find the number with the highest value of x and y?",
         choices: ["a. ceil(x,y)", "b. Math.ceil(x,y)", "c. top(x,y)", "d. Math.max(x,y)"],
