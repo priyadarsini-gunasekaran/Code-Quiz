@@ -6,6 +6,8 @@ var submitBtn = document.querySelector("#submit");
 var startBtn = document.querySelector("#start_button");
 var initialsEl = document.querySelector("#initials");
 var feedbackEl = document.querySelector("#feedback");
+let correctBeat = new Audio('starter/assets/sfx/correct.wav');
+let wrongBeat = new Audio('starter/assets/sfx/wrong.wav');
 
 // quiz state variables
 var currentQuestionIndex = 0;
@@ -69,10 +71,12 @@ function questionClick() {
     // display new time on page
     timerEl.textContent = time;
     feedbackEl.textContent = "Wrong!";
+    wrongBeat.play();
     feedbackEl.style.color = "red";
     feedbackEl.style.fontSize = "400%";
   } else {
     feedbackEl.textContent = "Correct!";
+    correctBeat.play();
     feedbackEl.style.color = "green";
     feedbackEl.style.fontSize = "400%";
   }
